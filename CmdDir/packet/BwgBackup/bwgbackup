@@ -1,0 +1,4 @@
+#!/bin/sh
+
+rm -rf /home/www/wwwroot/Software/CmdDir/packet/BwgBackup/nginx
+scp -P 10086 -r root@104.243.28.235:/www/server/panel/vhost/nginx /home/www/wwwroot/Software/CmdDir/packet/BwgBackup >/dev/null 2>&1 &

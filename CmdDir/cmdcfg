@@ -1,0 +1,9 @@
+#!/bin/sh
+file=$1\.cmd
+
+# echo $file
+if [[ ! -f /home/www/wwwroot/Software/CmdDir/$file ]]; then
+    echo "NO such commond file: /home/www/wwwroot/Software/CmdDir/$file"
+else
+    cat /home/www/wwwroot/Software/CmdDir/$file
+fi
